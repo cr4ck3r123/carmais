@@ -1,0 +1,31 @@
+//XHTML BASICO
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html">
+	  
+<h:head>
+</h:head>
+<h:body>
+</h:body>
+
+
+// XHTML FRAGMENT
+
+<ui:fragment xmlns="http://www.w3.org/1999/xhtml"
+			 xmlns:ui="http://java.sun.com/jsf/facelets">
+			 
+</ui:fragment>
+
+// PAGINAS CONTEUDO
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:ui="http://java.sun.com/jsf/facelets"
+				template="/app/layout/principal.xhtml">
+				
+</ui:composition> 
+
+// XHTML PAGINAS CONTEUDO
+
+<div class="box-body">
+
+</div>

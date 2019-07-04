@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta
+		content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+		name="viewport" />
+
+	<title>AdminLTE 2 | Fixed Layout</title>
+	<link rel="stylesheet"
+		href="#{ request.contextPath}/assets/plugins/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet"
+		href="#{ request.contextPath}/assets/plugins/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet"
+		href="#{ request.contextPath}/assets/plugins/Ionicons/css/ionicons.min.css" />
+	<link rel="stylesheet"
+		href="#{ request.contextPath}/assets/css/AdminLTE.min.css" />
+	<link rel="stylesheet"
+		href="#{ request.contextPath}/assets/css/skins/_all-skins.min.css" />
+
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic" />
+
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+
+</h:head>
+<h:body class="hold-transition skin-blue fixed sidebar-mini">
+	<!-- Site wrapper -->
+	<div class="wrapper">
+
+		<!-- Header -->
+
+		<ui:include src="/app/layout/principal-fragments/header.xhtml" />
+
+		<!-- =============================================== -->
+
+		<ui:include src="/app/layout/principal-fragments/menu.xhtml" />
+		<!-- =============================================== -->
+
+		<!-- CONTEUDO -->
+		<div class="content-wrapper">
+			<section class="content-header">
+				<h1>
+					<ui:insert name="conteudo-titulo"></ui:insert>
+					<small>
+					<ui:insert name="conteudo-subtitulo"></ui:insert>
+					</small>
+				</h1>
+			</section>
+			
+			<section class="content">
+				<div class="box">
+					<ui:insert name="conteudo"></ui:insert>
+			</div>
+			</section>
+		</div>
+		<ui:include src="/app/layout/principal-fragments/footer.xhtml" />
+	</div>
+
+<!-- =============================================== -->
+
+	<script
+		src="#{ request.contextPath }/assets/plugins/jquery/dist/jquery.min.js"></script>
+	<script
+		src="#{ request.contextPath }/assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script
+		src="#{ request.contextPath }/assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+	<script
+		src="#{ request.contextPath }/assets/plugins/fastclick/lib/fastclick.js"></script>
+	<script src="#{ request.contextPath }/assets/js/adminlte.min.js"></script>
+	<script src="#{ request.contextPath}/assets/js/demo.js"></script>
+
+</h:body>
+</html>
